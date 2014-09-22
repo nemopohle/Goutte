@@ -105,7 +105,7 @@ class Client extends BaseClient
             'body' => $body,
             'cookies' => $this->getCookieJar()->allRawValues($request->getUri()),
             'allow_redirects' => false,
-            'timeout' => 30,
+            'timeout' => 120,
         );
 
         if (!empty($headers)) {
